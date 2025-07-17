@@ -1,67 +1,13 @@
-# Motion-Detection
+📌 Project Description
 
+This project demonstrates real-time people tracking in video streams using YOLOv8 object detection model with OpenCV. It counts and tracks individuals while displaying their unique IDs on the video frames.
+🛠️ Prerequisites
 
+    Python 3.7+
 
-📌 Project Overview
+    OpenCV (pip install opencv-python)
 
-This project is a computer vision application that detects motion and tracks moving objects (primarily people) in video streams using OpenCV. It compares consecutive frames to identify moving regions and highlights them with bounding boxes.
-✨ Key Features
+    Ultralytics YOLO (pip install ultralytics)
 
-    Real-time motion detection in video streams
+    Sample video file (e.g., "vtest.avi")
 
-    Background subtraction using frame differencing
-
-    Noise reduction with Gaussian blur
-
-    Adaptive thresholding for movement detection
-
-    Contour analysis to identify significant moving objects
-
-    Customizable parameters for different environments
-
-    Visual tracking with bounding boxes
-
-🛠️ Technical Implementation
-Core Technologies
-
-    Python 3.x
-
-    OpenCV (cv2) library
-
-    Computer vision techniques:
-
-        Frame differencing
-
-        Image thresholding
-
-        Contour detection
-
-        Morphological operations
-
-Main Components
-
-    Video Capture: Reads input from video files or cameras
-
-    Frame Processing:
-
-        Resizing for performance
-
-        Grayscale conversion
-
-        Gaussian blur for noise reduction
-
-    Motion Detection:
-
-        Absolute difference between frames
-
-        Thresholding to identify moving pixels
-
-        Dilation to enhance moving regions
-
-    Object Tracking:
-
-        Contour detection
-
-        Area-based filtering
-
-        Bounding box drawing
